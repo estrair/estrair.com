@@ -9,9 +9,8 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-color:#333;
 background:#f7f9fc;
-scroll-behavior:smooth;
+color:#333;
 }
 
 nav{
@@ -21,7 +20,6 @@ width:100%;
 background:white;
 padding:15px 40px;
 box-shadow:0 2px 6px rgba(0,0,0,.08);
-z-index:1000;
 }
 
 nav a{
@@ -31,12 +29,8 @@ color:#333;
 font-weight:600;
 }
 
-nav a:hover{
-color:#2c7be5;
-}
-
 .hero{
-height:80vh;
+height:65vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -48,7 +42,7 @@ padding:20px;
 }
 
 .hero h1{
-font-size:52px;
+font-size:48px;
 margin-bottom:10px;
 }
 
@@ -57,44 +51,28 @@ font-size:20px;
 max-width:600px;
 }
 
-.button{
-margin-top:25px;
-padding:12px 28px;
-background:white;
-color:#1d4ed8;
-border-radius:25px;
-font-weight:bold;
-text-decoration:none;
-}
-
 section{
-max-width:1000px;
+max-width:900px;
 margin:auto;
-padding:80px 20px;
+padding:60px 20px;
 }
 
 h2{
 text-align:center;
-margin-bottom:40px;
-font-size:32px;
+margin-bottom:30px;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+gap:20px;
 }
 
 .card{
 background:white;
-padding:30px;
+padding:25px;
 border-radius:10px;
-box-shadow:0 8px 20px rgba(0,0,0,.05);
-transition:.2s;
-}
-
-.card:hover{
-transform:translateY(-5px);
+box-shadow:0 6px 16px rgba(0,0,0,.05);
 }
 
 .advisors{
@@ -109,8 +87,8 @@ text-align:center;
 }
 
 .advisor img{
-width:90px;
-height:90px;
+width:80px;
+height:80px;
 border-radius:50%;
 background:#ddd;
 margin-bottom:10px;
@@ -119,12 +97,12 @@ margin-bottom:10px;
 .contact{
 text-align:center;
 background:#eef4ff;
-padding:80px 20px;
+padding:60px 20px;
 }
 
 footer{
 text-align:center;
-padding:25px;
+padding:20px;
 font-size:14px;
 background:#e9edf4;
 }
@@ -136,118 +114,53 @@ background:#e9edf4;
 
 <nav>
 <a href="#about">About</a>
-<a href="#problem">Problem</a>
-<a href="#solution">Approach</a>
-<a href="#advisors">Advisors</a>
+<a href="#science">Science</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
 <h1>EstrAir</h1>
-<p>Advancing airway-focused therapies to improve sleep health and respiratory outcomes.</p>
-<a class="button" href="#about">Learn More</a>
+<p>Exploring airway-focused approaches to improving sleep health.</p>
 </div>
 
 <section id="about">
+
 <h2>About EstrAir</h2>
+
 <p style="text-align:center; max-width:700px; margin:auto;">
-EstrAir is exploring innovative approaches to addressing airway dysfunction in sleep-related breathing disorders.
-Our work focuses on understanding the structural and physiological mechanisms that contribute to airway collapse
-during sleep and identifying new therapeutic pathways to improve outcomes for patients.
+EstrAir is focused on understanding airway dysfunction in sleep-related breathing disorders.
+Our work explores physiological and structural contributors to airway collapse during sleep
+and potential pathways for innovative therapeutic approaches.
 </p>
+
 </section>
 
-<section id="problem">
-<h2>The Problem</h2>
+<section id="science">
 
-<div class="cards">
-
-<div class="card">
-<h3>Obstructive Sleep Apnea</h3>
-<p>
-Obstructive sleep apnea affects millions worldwide and is associated with cardiovascular disease,
-cognitive impairment, and reduced quality of life.
-</p>
-</div>
-
-<div class="card">
-<h3>Limited Therapies</h3>
-<p>
-Current treatments often rely on mechanical interventions rather than addressing the underlying
-airway physiology contributing to disease.
-</p>
-</div>
-
-<div class="card">
-<h3>Unmet Need</h3>
-<p>
-There remains a significant need for innovative approaches that target the root causes of airway
-collapse during sleep.
-</p>
-</div>
-
-</div>
-</section>
-
-<section id="solution">
-<h2>Our Approach</h2>
+<h2>Scientific Focus</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Airway Physiology</h3>
-<p>
-Investigating the mechanisms underlying airway obstruction and collapse during sleep.
-</p>
+<p>Investigating mechanisms contributing to airway obstruction during sleep.</p>
 </div>
 
 <div class="card">
 <h3>Clinical Collaboration</h3>
-<p>
-Working with researchers and clinicians specializing in sleep medicine and respiratory physiology.
-</p>
+<p>Engaging researchers and clinicians in sleep medicine and respiratory physiology.</p>
 </div>
 
 <div class="card">
 <h3>Therapeutic Innovation</h3>
-<p>
-Developing strategies that aim to address structural and physiological contributors to airway dysfunction.
-</p>
+<p>Exploring strategies that address root causes of airway dysfunction.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="advisors">
-
-<h2>Scientific Advisors</h2>
-
-<div class="advisors">
-
-<div class="advisor">
-<img>
-<p><strong>Advisor Name</strong></p>
-<p>Sleep Medicine</p>
-</div>
-
-<div class="advisor">
-<img>
-<p><strong>Advisor Name</strong></p>
-<p>Airway Physiology</p>
-</div>
-
-<div class="advisor">
-<img>
-<p><strong>Advisor Name</strong></p>
-<p>Respiratory Research</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" class="contact">
+<section class="contact" id="contact">
 
 <h2>Contact</h2>
 
