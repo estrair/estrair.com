@@ -14,9 +14,6 @@ color:#333;
 }
 
 nav{
-position:fixed;
-top:0;
-width:100%;
 background:white;
 padding:15px 40px;
 box-shadow:0 2px 6px rgba(0,0,0,.08);
@@ -25,12 +22,12 @@ box-shadow:0 2px 6px rgba(0,0,0,.08);
 nav a{
 margin-right:20px;
 text-decoration:none;
-color:#333;
 font-weight:600;
+color:#333;
 }
 
 .hero{
-height:65vh;
+height:70vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -42,68 +39,17 @@ padding:20px;
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:10px;
+font-size:52px;
 }
 
 .hero p{
 font-size:20px;
-max-width:600px;
-}
-
-section{
-max-width:900px;
-margin:auto;
-padding:60px 20px;
-}
-
-h2{
-text-align:center;
-margin-bottom:30px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 6px 16px rgba(0,0,0,.05);
-}
-
-.advisors{
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-}
-
-.advisor{
-text-align:center;
-}
-
-.advisor img{
-width:80px;
-height:80px;
-border-radius:50%;
-background:#ddd;
-margin-bottom:10px;
-}
-
-.contact{
-text-align:center;
-background:#eef4ff;
-padding:60px 20px;
+max-width:650px;
 }
 
 footer{
 text-align:center;
 padding:20px;
-font-size:14px;
 background:#e9edf4;
 }
 
@@ -113,62 +59,24 @@ background:#e9edf4;
 <body>
 
 <nav>
-<a href="#about">About</a>
-<a href="#science">Science</a>
-<a href="#contact">Contact</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="science.html">Science</a>
+<a href="contact.html">Contact</a>
 </nav>
 
 <div class="hero">
+
 <h1>EstrAir</h1>
-<p>Exploring airway-focused approaches to improving sleep health.</p>
-</div>
 
-<section id="about">
-
-<h2>About EstrAir</h2>
-
-<p style="text-align:center; max-width:700px; margin:auto;">
-EstrAir is focused on understanding airway dysfunction in sleep-related breathing disorders.
-Our work explores physiological and structural contributors to airway collapse during sleep
-and potential pathways for innovative therapeutic approaches.
+<p>
+EstrAir addresses a major blind spot in women’s health.
+As estrogen declines during menopause, degeneration of upper airway tissues
+can lead to voice changes, dryness, chronic cough, and potentially increased
+risk of sleep apnea — yet there are no targeted treatments for the airway itself.
 </p>
 
-</section>
-
-<section id="science">
-
-<h2>Scientific Focus</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Airway Physiology</h3>
-<p>Investigating mechanisms contributing to airway obstruction during sleep.</p>
 </div>
-
-<div class="card">
-<h3>Clinical Collaboration</h3>
-<p>Engaging researchers and clinicians in sleep medicine and respiratory physiology.</p>
-</div>
-
-<div class="card">
-<h3>Therapeutic Innovation</h3>
-<p>Exploring strategies that address root causes of airway dysfunction.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="contact" id="contact">
-
-<h2>Contact</h2>
-
-<p>For research collaboration or inquiries:</p>
-
-<p><strong>estrair@gmail.com</strong></p>
-
-</section>
 
 <footer>
 © 2026 EstrAir
