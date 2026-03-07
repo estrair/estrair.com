@@ -16,8 +16,14 @@ color:#333;
 
 nav{
 background:white;
-padding:15px 40px;
+padding:12px 40px;
 box-shadow:0 2px 6px rgba(0,0,0,.08);
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.navlinks{
 display:flex;
 gap:30px;
 }
@@ -36,6 +42,10 @@ color:#1d4ed8;
 
 nav a.active{
 color:#1d4ed8;
+}
+
+.logo img{
+height:40px;
 }
 
 section{
@@ -60,10 +70,18 @@ line-height:1.7;
 <body>
 
 <nav>
+
+<div class="logo">
+<img src="logo.png" alt="EstrAir">
+</div>
+
+<div class="navlinks">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="science.html" class="active">Science</a>
 <a href="contact.html">Contact</a>
+</div>
+
 </nav>
 
 <section>
