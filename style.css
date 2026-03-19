@@ -135,7 +135,11 @@ margin-bottom:15px;
 .full-banner{
 width:100%;
 align-self:stretch;
-background:rgba(255,255,255,0.12);
+background:linear-gradient(
+  90deg,
+  rgba(62,127,128,0.7),
+  rgba(242,106,61,0.5)
+);
 padding:18px 0;
 margin-bottom:20px;
 
