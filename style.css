@@ -224,7 +224,7 @@ box-shadow:0 6px 14px rgba(0,0,0,.05);
 }
 
 .problem{
-padding:60px 30px;
+padding:80px 30px;  /* increased from 60 */
 text-align:center;
 background:white;
 }
