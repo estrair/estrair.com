@@ -133,18 +133,34 @@ margin-bottom:15px;
 }
 
 .title-banner{
-background:linear-gradient(135deg,#3E7F80,#5A9A9C);
-padding:12px 34px;
-border-radius:10px;
-margin-bottom:20px;
-box-shadow:0 4px 12px rgba(0,0,0,.15);
+background:rgba(255,255,255,0.12); /* lighter contrast vs gradient */
+padding:14px 36px;
+border-radius:12px;
+margin-bottom:18px;
+
+/* glass + separation effect */
+backdrop-filter:blur(6px);
+-webkit-backdrop-filter:blur(6px);
+
+/* subtle border to define edges */
+border:1px solid rgba(255,255,255,0.25);
+
+/* glow + lift */
+box-shadow:
+0 8px 20px rgba(0,0,0,0.2),
+0 0 20px rgba(255,255,255,0.15);
+
+/* animation */
+animation:fadeInUp 0.8s ease;
 }
 
-.title-banner{
-background:rgba(62,127,128,0.85);
-padding:10px 30px;
-border-radius:8px;
-margin-bottom:15px;
+.title-banner h1{
+margin:0;
+color:white;
+letter-spacing:1px;
+
+/* subtle glow on text */
+text-shadow:0 2px 8px rgba(0,0,0,0.3);
 }
 
 .subhead{
@@ -260,4 +276,15 @@ margin-top:20px;
 margin:12px 0;
 font-size:18px;
 font-weight:500;
+}
+
+@keyframes fadeInUp{
+from{
+opacity:0;
+transform:translateY(10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
