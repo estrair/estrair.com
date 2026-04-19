@@ -9,11 +9,15 @@ color:white;
 
 nav{
 background:transparent;
-padding:20px 40px;
+padding:18px 30px 8px 30px;
 box-shadow:none;
 
 position:relative;
 z-index:1000;
+
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
 }
 
 /* MENU */
@@ -73,14 +77,15 @@ color:#FF5A3C;
 
 /* LOGO */
 
-.logo img{
-height:50px;
-display:block;
-}
-
 .logo{
 display:flex;
 align-items:center;
+margin-top:18px;
+}
+
+.logo img{
+height:50px;
+display:block;
 }
 
 /* HERO SECTION */
@@ -341,7 +346,11 @@ padding:60px 30px;
 @media (max-width: 768px){
 
 nav{
-padding:16px 18px;
+padding:14px 16px 6px 16px;
+}
+
+.logo{
+margin-top:12px;
 }
 
 .logo img{
