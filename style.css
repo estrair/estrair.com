@@ -84,7 +84,7 @@ margin-top:18px;
 }
 
 .logo img{
-height:46px;
+height:38px;
 display:block;
 }
 
@@ -318,19 +318,16 @@ margin-bottom:65px;
 }
 
 .hero-founder{
-font-size:26px;
-color:white;
-margin-top:35px;
-margin-bottom:18px;
+font-size:24px;
+margin-top:22px;
+margin-bottom:6px;
 font-weight:400;
 }
 
 .hero-email a{
-font-size:22px;
-color:#19D3DA;
-text-decoration:none;
+font-size:20px;
 display:inline-block;
-margin-top:6px;
+margin-top:0;
 }
 
 .hero-email a:hover{
@@ -358,7 +355,7 @@ margin-top:12px;
 }
 
 .logo img{
-height:39px;
+height:32px;
 }
 
 .main-title{
@@ -422,4 +419,27 @@ color:rgba(255,255,255,0.68);
 margin-top:18px;
 margin-bottom:0;
 font-weight:400;
+}
+
+p{
+margin-top:0;
+margin-bottom:14px;
+}
+
+li{
+margin-bottom:8px;
+}
+
+.page{
+padding:60px 30px;
+}
+
+.hero-statement{
+margin-bottom:28px;
+line-height:1.35;
+}
+
+.page p,
+.problem p{
+line-height:1.55;
 }
