@@ -16,109 +16,59 @@ position:relative;
 z-index:1000;
 }
 
-/* MENU CONTAINER */
+/* MENU */
 
 .menu-container{
 position:relative;
-display:inline-block;
-width:auto;
-height:auto;
-z-index:1000;
+z-index:2000;
 }
 
-/* HAMBURGER ICON */
-
 .menu-icon{
+background:none;
+border:none;
+cursor:pointer;
 display:flex;
 flex-direction:column;
 gap:5px;
-cursor:pointer;
-padding:10px 12px;
-border-radius:6px;
-transition:background .2s ease;
+padding:10px;
 }
-
-.menu-icon:hover{
-background:#FFF3ED;
-}
-
-/* HAMBURGER BARS */
 
 .menu-icon span{
-display:block;
-width:26px;
+width:28px;
 height:3px;
-background:#333;
-border-radius:2px;
-transition:all .3s ease;
-}
-
-/* X TRANSFORM */
-
-.menu-container:hover .menu-icon span:nth-child(1){
-transform:translateY(8px) rotate(45deg);
-}
-
-.menu-container:hover .menu-icon span:nth-child(2){
-opacity:0;
-}
-
-.menu-container:hover .menu-icon span:nth-child(3){
-transform:translateY(-8px) rotate(-45deg);
-}
-
-/* DROPDOWN */
-
-.menu-dropdown a:hover{
-color:#FF5A3C;
-background:rgba(255,255,255,0.05);
+background:white;
+border-radius:3px;
+display:block;
 }
 
 .menu-dropdown{
-opacity:0;
-pointer-events:none;
-transform:translateY(8px);
-
+display:none;
 position:absolute;
-top:48px;
+top:52px;
 left:0;
-
-background:rgba(0,0,0,.88);
+background:rgba(0,0,0,.94);
 border-radius:12px;
+min-width:220px;
 padding:10px 0;
-min-width:190px;
-
-box-shadow:0 12px 28px rgba(0,0,0,.35);
-
-transition:all .25s ease;
-z-index:1001;
+box-shadow:0 12px 24px rgba(0,0,0,.4);
 }
 
-.menu-container:hover .menu-dropdown{
-opacity:1;
-transform:translateY(0);
-pointer-events:auto;
-transition-delay:0s;
+.menu-dropdown.show{
+display:block;
 }
-
-/* MENU LINKS */
 
 .menu-dropdown a{
 display:block;
-padding:12px 20px;
-text-decoration:none;
+padding:14px 22px;
 color:white;
+text-decoration:none;
+font-size:22px;
 font-weight:600;
-transition:background .2s ease, color .2s ease;
-}
-
-.menu-dropdown{
-z-index:1001;
 }
 
 .menu-dropdown a:hover{
-background:#FFF3ED;
-color:#F26A3D;
+background:rgba(255,255,255,.08);
+color:#FF5A3C;
 }
 
 /* LOGO */
