@@ -1,81 +1,54 @@
-<!-- 
-  ESTRAIR - ABOUT PAGE 
-  Paste this into a HubSpot Custom HTML module on the About page.
--->
-<style>
-  .estrair-page-wrapper {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #0D1B2A;
-    color: #FFFFFF;
-    padding: 80px 20px;
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .estrair-card {
-    background-color: #162535;
-    border-radius: 12px;
-    padding: 60px;
-    max-width: 800px;
-    width: 100%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border-top: 4px solid #F5820A; /* Brand Orange */
-  }
-  .estrair-card h1 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #F5820A;
-    display: inline-block;
-    padding-bottom: 10px;
-  }
-  .estrair-card p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #C8D8E8;
-    margin-bottom: 24px;
-  }
-  .estrair-card p.highlight {
-    color: #1ABC9C; /* Brand Teal */
-    font-weight: 600;
-  }
-  .estrair-card .disclaimer {
-    margin-top: 40px;
-    font-size: 14px;
-    color: #7A9BB5;
-    font-style: italic;
-    border-top: 1px solid #1E3A50;
-    padding-top: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    .estrair-card { padding: 40px 20px; }
-    .estrair-card h1 { font-size: 28px; }
-    .estrair-card p { font-size: 16px; }
-  }
-</style>
+<!DOCTYPE html>
+<!-- ============================================================
+     PASTE THIS INTO: about.html  in your GitHub repo
+     Steps: Click about.html → pencil icon → select all → delete → paste → Commit changes
+     ============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | EstrAir</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" />
+</head>
+<body>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Navigation -->
+  <nav>
+    <span class="nav-logo">EstrAir&trade;</span>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="science.html">Science</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<div class="estrair-page-wrapper">
-  <div class="estrair-card">
-    <h1>About EstrAir</h1>
-    
-    <p>EstrAir is developing targeted airway therapies for symptoms that emerge during menopause, including cough, dryness, voice change, and sleep disruption.</p>
-    
-    <p>These conditions affect millions of women, yet the airway remains an overlooked area of women's health with no approved targeted treatments.</p>
-    
-    <p class="highlight">Our focus is localized, science-driven approaches that address symptoms at their source.</p>
-    
-    <div class="disclaimer">
-      Investigational only. Not FDA approved.
+  <!-- Page Content -->
+  <main class="page-wrapper">
+    <div class="card accent-orange">
+      <h1>About EstrAir</h1>
+
+      <p>EstrAir is developing targeted airway therapies for symptoms that emerge during menopause — including chronic cough, throat dryness, voice change, and sleep disruption.</p>
+
+      <p>These conditions affect millions of women, yet the airway remains a profoundly overlooked area of women's health. There are currently no approved targeted treatments for menopause-related airway disease.</p>
+
+      <p class="highlight">Our focus is localized, science-driven approaches that address symptoms at their source — beginning with sleep apnea.</p>
+
+      <div class="disclaimer">
+        Investigational only. Not FDA approved. &copy; 2026 EstrAir&trade;. All rights reserved.
+      </div>
     </div>
-  </div>
-</div>
+  </main>
 
+  <!-- Footer -->
+  <footer>
+    <div>Investigational only. Not FDA approved.</div>
+    <div class="copyright">&copy; 2026 EstrAir&trade;. All rights reserved.</div>
+  </footer>
 
-live
-
-Jump to live
+</body>
+</html>
