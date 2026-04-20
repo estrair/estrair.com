@@ -1,78 +1,54 @@
-<!-- 
-  ESTRAIR - CONTACT PAGE 
-  Paste this into a HubSpot Custom HTML module on the Contact page.
--->
-<style>
-  .estrair-page-wrapper {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #0D1B2A;
-    color: #FFFFFF;
-    padding: 80px 20px;
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .estrair-card {
-    background-color: #162535;
-    border-radius: 12px;
-    padding: 60px;
-    max-width: 800px;
-    width: 100%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border-top: 4px solid #F5820A; /* Brand Orange */
-  }
-  .estrair-card h1 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #F5820A;
-    display: inline-block;
-    padding-bottom: 10px;
-  }
-  .estrair-card p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #C8D8E8;
-    margin-bottom: 30px;
-  }
-  .estrair-card .contact-email {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 600;
-    color: #1ABC9C; /* Brand Teal */
-    text-decoration: none;
-    padding: 15px 30px;
-    border: 2px solid #1ABC9C;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    background-color: rgba(26, 188, 156, 0.05);
-  }
-  .estrair-card .contact-email:hover {
-    background-color: #1ABC9C;
-    color: #0D1B2A;
-    box-shadow: 0 5px 15px rgba(26, 188, 156, 0.3);
-  }
-  
-  @media (max-width: 768px) {
-    .estrair-card { padding: 40px 20px; }
-    .estrair-card h1 { font-size: 28px; }
-    .estrair-card p { font-size: 16px; }
-    .estrair-card .contact-email { font-size: 16px; padding: 12px 20px; }
-  }
-</style>
+<!DOCTYPE html>
+<!-- ============================================================
+     PASTE THIS INTO: contact.html  in your GitHub repo
+     Steps: Click contact.html → pencil icon → select all → delete → paste → Commit changes
+     ============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | EstrAir</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" />
+</head>
+<body>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Navigation -->
+  <nav>
+    <span class="nav-logo">EstrAir&trade;</span>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="science.html">Science</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
 
-<div class="estrair-page-wrapper">
-  <div class="estrair-card">
-    <h1>Contact</h1>
-    
-    <p>For investment, research collaboration, or general inquiries:</p>
-    
-    <a href="mailto:estrairofficial@gmail.com" class="contact-email">
-      estrairofficial@gmail.com
-    </a>
-  </div>
-</div>
+  <!-- Page Content -->
+  <main class="page-wrapper">
+    <div class="card accent-orange">
+      <h1>Contact</h1>
+
+      <p>For investment inquiries, research collaboration, or general questions, please reach out directly:</p>
+
+      <a href="mailto:estrairofficial@gmail.com" class="email-btn">
+        estrairofficial@gmail.com
+      </a>
+
+      <div class="disclaimer">
+        &copy; 2026 EstrAir&trade;. All rights reserved.
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div>Investigational only. Not FDA approved.</div>
+    <div class="copyright">&copy; 2026 EstrAir&trade;. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
