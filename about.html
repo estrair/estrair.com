@@ -1,94 +1,81 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-<title>About | EstrAir</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="icon" type="image/png" href="favicon.png">
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<nav>
-
-<div class="menu-container">
-
-<button class="menu-icon" onclick="toggleMenu()">
-<span></span>
-<span></span>
-<span></span>
-</button>
-
-<div class="menu-dropdown" id="mobileMenu">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="science.html">Science</a>
-<a href="contact.html">Contact</a>
-</div>
-
-</div>
-
-<div class="logo">
-<img src="logo.png" alt="EstrAir">
-</div>
-
-</nav>
-
-<section>
-
-<div class="page">
-
-<div class="page-card">
-
-<h1>About EstrAir</h1>
-
-<p>
-EstrAir is developing targeted airway therapies for symptoms that emerge during menopause, including cough, dryness, voice change, and sleep disruption.
-</p>
-
-<p>
-These conditions affect millions of women, yet the airway remains an overlooked area of women’s health with no approved targeted treatments.
-</p>
-
-<p>
-Our focus is localized, science-driven approaches that address symptoms at their source.
-</p>
-
-<p class="page-disclaimer">
-Investigational only. Not FDA approved.
-</p>
+<!-- 
+  ESTRAIR - ABOUT PAGE 
+  Paste this into a HubSpot Custom HTML module on the About page.
+-->
+<style>
+  .estrair-page-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+    padding: 80px 20px;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .estrair-card {
+    background-color: #162535;
+    border-radius: 12px;
+    padding: 60px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-top: 4px solid #F5820A; /* Brand Orange */
+  }
+  .estrair-card h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #F5820A;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  .estrair-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #C8D8E8;
+    margin-bottom: 24px;
+  }
+  .estrair-card p.highlight {
+    color: #1ABC9C; /* Brand Teal */
+    font-weight: 600;
+  }
+  .estrair-card .disclaimer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #7A9BB5;
+    font-style: italic;
+    border-top: 1px solid #1E3A50;
+    padding-top: 20px;
+  }
   
+  @media (max-width: 768px) {
+    .estrair-card { padding: 40px 20px; }
+    .estrair-card h1 { font-size: 28px; }
+    .estrair-card p { font-size: 16px; }
+  }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<div class="estrair-page-wrapper">
+  <div class="estrair-card">
+    <h1>About EstrAir</h1>
+    
+    <p>EstrAir is developing targeted airway therapies for symptoms that emerge during menopause, including cough, dryness, voice change, and sleep disruption.</p>
+    
+    <p>These conditions affect millions of women, yet the airway remains an overlooked area of women's health with no approved targeted treatments.</p>
+    
+    <p class="highlight">Our focus is localized, science-driven approaches that address symptoms at their source.</p>
+    
+    <div class="disclaimer">
+      Investigational only. Not FDA approved.
+    </div>
+  </div>
 </div>
 
-</div>
 
-</section>
-  
-<script>
-document.addEventListener("DOMContentLoaded", function(){
+live
 
-function toggleMenu() {
-document.getElementById("mobileMenu").classList.toggle("show");
-}
-
-window.toggleMenu = toggleMenu;
-
-document.addEventListener("click", function(e){
-const menu = document.getElementById("mobileMenu");
-const button = document.querySelector(".menu-icon");
-
-if (!menu.contains(e.target) && !button.contains(e.target)){
-menu.classList.remove("show");
-}
-});
-
-});
-</script>
-  
-</body>
-</html>
+Jump to live
